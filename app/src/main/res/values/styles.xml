@@ -1,0 +1,9 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Personaliza tus atributos de tema aquí -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

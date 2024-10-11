@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextPurchaseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monto de la compra"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Distancia (km)"
+        android:layout_below="@id/editTextPurchaseAmount"
+        android:inputType="numberDecimal"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Costo"
+        android:layout_below="@id/editTextDistance"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewResult" />
+
+</RelativeLayout>
